@@ -6,7 +6,6 @@ TestResults/
 
 *.suo
 *.user
-*.userprefs
 *.sln.docstates
 
 _ReSharper*
