@@ -1,9 +1,34 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Barras.Core", "src\app\Barras.Core\Barras.Core.csproj", "{2587C659-F0AB-4038-81CF-6FDDE1817400}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5A835759-3DDF-4040-AA44-B84FB1F401DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Barras.Core.Tests", "src\tests\Barras.Core.Tests\Barras.Core.Tests.csproj", "{F481DAC2-D3FF-43AF-B265-AA5C0130E352}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Default|Any CPU = Default|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2587C659-F0AB-4038-81CF-6FDDE1817400}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2587C659-F0AB-4038-81CF-6FDDE1817400}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2587C659-F0AB-4038-81CF-6FDDE1817400}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2587C659-F0AB-4038-81CF-6FDDE1817400}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F481DAC2-D3FF-43AF-B265-AA5C0130E352}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F481DAC2-D3FF-43AF-B265-AA5C0130E352}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F481DAC2-D3FF-43AF-B265-AA5C0130E352}.Default|Any CPU.ActiveCfg = Debug|Any CPU
+		{F481DAC2-D3FF-43AF-B265-AA5C0130E352}.Default|Any CPU.Build.0 = Debug|Any CPU
+		{F481DAC2-D3FF-43AF-B265-AA5C0130E352}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F481DAC2-D3FF-43AF-B265-AA5C0130E352}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F481DAC2-D3FF-43AF-B265-AA5C0130E352} = {5A835759-3DDF-4040-AA44-B84FB1F401DB}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = src\app\Barras.Core\Barras.Core.csproj
 	EndGlobalSection
 EndGlobal
