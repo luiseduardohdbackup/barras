@@ -30,9 +30,43 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="nunit.core, Version=2.6.0.12051, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77">
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="AllPositiveBlackBoxTester.cs" />
+    <Compile Include="BufferedImageLuminanceSource.cs" />
+    <Compile Include="Aztec\AztecBlackBox1TestCase.cs" />
+    <Compile Include="Aztec\AztecBlackBox2TestCase.cs" />
+    <Compile Include="Common\AbstractBlackBoxTestCase.cs" />
+    <Compile Include="Common\AbstractNegativeBlackBoxTestCase.cs" />
+    <Compile Include="Common\BitArrayTestCase.cs" />
+    <Compile Include="Common\BitMatrixTestCase.cs" />
+    <Compile Include="Common\BitSourceBuilder.cs" />
+    <Compile Include="Common\BitSourceTestCase.cs" />
+    <Compile Include="Common\PerspectiveTransformTestCase.cs" />
+    <Compile Include="Common\StringUtilsTestCase.cs" />
+    <Compile Include="Common\SummaryResults.cs" />
+    <Compile Include="Common\TestResult.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Aztec\" />
+    <Folder Include="QrCode\" />
+    <Folder Include="DataMatrix\" />
+    <Folder Include="Pdf417\" />
+    <Folder Include="OneD\" />
+    <Folder Include="Common\" />
+    <Folder Include="Negative\" />
+    <Folder Include="Common\ReedSolomon\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataMatrix\Test.txt" />
+    <None Include="Negative\Test.txt" />
+    <None Include="OneD\Test.txt" />
+    <None Include="Pdf417\Text.txt" />
+    <None Include="QrCode\Test.txt" />
+  </ItemGroup>
 </Project>
